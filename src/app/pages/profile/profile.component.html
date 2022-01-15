@@ -1,0 +1,47 @@
+
+<mat-card *ngIf="user">
+<h1> Your Profile Details!!</h1>
+<mat-card-content>
+    <div class="bootstrap-wrapper">
+        <div class="container">
+        
+            <div class="container text-center">
+                <img src="https://t3.ftcdn.net/jpg/03/46/83/96/360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg" alt="" class="profile-image"/>
+                <h1 class="mt20">{{user.firstname}} {{user.lastname}}</h1>
+            </div>
+
+            <div class="row">
+                <div class="col-md-10 offset-md-1">
+                    <!-- table detail -->
+                    <table class="table text-center">
+                        <tr>
+                            <td> Username</td>
+                            <td>{{user.username}}  </td>
+                        </tr>
+                        <tr *ngIf="user.id">
+                            <td> Userid</td>
+                            <td> Exam{{user.id}}</td>
+                        </tr>
+                        <tr *ngIf="user.phone">
+                            <td> Phone</td>
+                            <td> {{user.phone}}</td>
+                        </tr>
+                        <tr>
+                            <td>Role</td>
+                            <td> {{user.authorities[0].authority}}</td>
+                        </tr>
+                        <tr>
+                            <td> Status</td>
+                            <td> {{user.enabled ? "ACTIVE" : "NOTACTIVE"}}</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</mat-card-content>
+<mat-card-actions class="text-center">
+    <button mat-raised-button color="primary">LIKE</button>
+    <button mat-raised-button color="accent">SHARE</button>
+</mat-card-actions>
+</mat-card>
