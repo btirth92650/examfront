@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/examfront",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

@@ -20,12 +20,12 @@
                 <h1 class="mt20"> On Going Quiz <b>{{ questions[0].quiz.title}}</b></h1>
             </ng-container>
             <mat-card *ngFor="let q of questions; let i = index" class="mt10">
-                <mat-card-content>
+                <mat-card-content >
                     <p ><b>Q {{i+1}})</b><span class="ml10" [innerHTML]="q.content"></span></p>
                     <mat-divider></mat-divider>
                     <div class="row mt20">
-                        <div class="col-md-6">
-                            <input name={{i}} type="radio" [value]="q.option1"  [(ngModel)]="q.givenAnswer"/>{{q.option1}}
+                        <div class="col-md-6" >
+                            <input  name={{i}} type="radio" [value]="q.option1"  [(ngModel)]="q.givenAnswer"/>{{q.option1}}
                         </div>
                         <div class="col-md-6">
                             <input name={{i}} type="radio" [value]="q.option2"  [(ngModel)]="q.givenAnswer"/>{{q.option2}}

@@ -91,11 +91,11 @@ updateQuestion;
         // console.log(this.updateQuestion);'
         Swal.fire('Success' , 'Question Updated!!!' , 'success').then((e)=>{
            //clicking ok then navigate to All questions
-           this._router.navigate(['/admin/view-questions/',this.qid , this.title]);// some problem while routing i'll fix later
+           this._router.navigate(["/admin/view-questions/"+ this.qid +this.title]);// some problem while routing i'll fix later
         });
       },
       (error)=>{
-        //error
+        //error 
         // console.log(error);
         Swal.fire('error' , 'Server error while updating question', 'error');
       },

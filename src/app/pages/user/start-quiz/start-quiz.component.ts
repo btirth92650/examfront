@@ -1,11 +1,9 @@
 import { LocationStrategy } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { error } from 'console';
-import { parse } from 'path';
 import { QuestionService } from 'src/app/services/question.service';
 import Swal from 'sweetalert2';
-
+ 
 @Component({
   selector: 'app-start-quiz',
   templateUrl: './start-quiz.component.html',
