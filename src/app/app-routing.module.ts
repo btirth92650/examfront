@@ -65,7 +65,7 @@ const routes: Routes = [
         component:UpdateQuizComponent,
       },
       { 
-        path: 'view-questions/:qid/:title',
+        path: 'view-questions/:quesId/:title',
         component:ViewQuizQuestionComponent,
         //canActivate:[AdminGuard]
       },

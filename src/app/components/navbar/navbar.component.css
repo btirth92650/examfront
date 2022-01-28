@@ -1,4 +1,9 @@
 .example-spacer {
     flex: 1 1 auto;
   }
-  
+.bgcolor{
+  background-color: #414141;
+}
+.bgcolor span, a,button {
+  color: aliceblue;
+}

@@ -10,16 +10,16 @@ import Swal from 'sweetalert2';
   styleUrls: ['./view-quiz-question.component.css']
 })
 export class ViewQuizQuestionComponent implements OnInit {
-  qid
+  quesId
   qtitle
   questions
 
   constructor(private _route: ActivatedRoute, private _question:QuestionService, private _snak:MatSnackBar) { }
 
   ngOnInit(): void {
-    this.qid=this._route.snapshot.params.qid;
+    this.quesId=this._route.snapshot.params.quesId;
     this.qtitle=this._route.snapshot.params.title;
-    this._question.getQuestionQuiz(this.qid).subscribe(
+    this._question.getQuestionQuiz(this.quesId).subscribe(
       (data)=>{
         console.log(data)
         this.questions=data;
