@@ -12,7 +12,7 @@ import { Router } from '@angular/router';
 })
 export class AddQuizComponent implements OnInit {
 
-  categories!:any []
+  categories:any
 
   quizData={
      
@@ -20,13 +20,13 @@ export class AddQuizComponent implements OnInit {
     description:'',
     maxMarks:'',
     numberOfQuestions:'',
-    active:'true',
+    active:'',
     category:{
       cid:''
     },
   }
   
-  constructor(private _catsev:CategoryService,private snak:MatSnackBar, private _quiz:QuizService,private _router:Router) { }
+    constructor(private _catsev:CategoryService,private snak:MatSnackBar, private _quiz:QuizService,private _router:Router) { }
 
   ngOnInit(): void {
 

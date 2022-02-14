@@ -14,7 +14,7 @@ export class AddQuestionComponent implements OnInit {
 
   public Editor = ClassicEditor
  
-  qid
+  qid:any
   qtitle
 
   question={
