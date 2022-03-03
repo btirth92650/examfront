@@ -33,7 +33,8 @@
               "./node_modules/bootstrap-grid-only-css/dist/css/bootstrap-grid.css"
 
             ],
-            "scripts": []
+            "scripts": [  
+            ]
           },
           "configurations": {
             "production": {

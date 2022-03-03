@@ -1,4 +1,4 @@
-import { Component, NgModule } from '@angular/core';
+import {  NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AddCategoryComponent } from './pages/admin/add-category/add-category.component';
 import { AddQuestionComponent } from './pages/admin/add-question/add-question.component';
@@ -16,6 +16,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { ProfileComponent } from './pages/profile/profile.component';
 import { SignupComponent } from './pages/signup/signup.component';
 import { LoadQuizComponent } from './pages/user/load-quiz/load-quiz.component';
+import { PaymentgetwayComponent } from './pages/admin/paymentgetway/paymentgetway.component'; 
 import { PrequizComponent } from './pages/user/prequizInstruction/prequiz.component';
 import { StartQuizComponent } from './pages/user/start-quiz/start-quiz.component';
 import { UserDashbordComponent } from './pages/user/user-dashbord/user-dashbord.component';
@@ -76,8 +77,11 @@ const routes: Routes = [
       {
         path:'question/:quesId',
         component:UpdateQuestionComponent
-        
-      }
+      },
+      {
+        path:'paymentGetWay',
+        component:PaymentgetwayComponent
+      },
     ],
   },
   { path: 'user-dashbord', component: UserDashbordComponent,  canActivate: [NormalGuard],
@@ -90,6 +94,7 @@ const routes: Routes = [
         path:'instructions/:qid',
         component:PrequizComponent
       },
+
     ],
    },
    

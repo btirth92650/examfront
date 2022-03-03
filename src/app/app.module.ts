@@ -44,6 +44,7 @@ import { StartQuizComponent } from './pages/user/start-quiz/start-quiz.component
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { NgxUiLoaderHttpModule, NgxUiLoaderModule } from "ngx-ui-loader";
 import { UpdateQuestionComponent } from './pages/admin/update-question/update-question.component';
+import { PaymentgetwayComponent } from './pages/admin/paymentgetway/paymentgetway.component';
 
 
 
@@ -74,6 +75,7 @@ import { UpdateQuestionComponent } from './pages/admin/update-question/update-qu
     PrequizComponent,
     StartQuizComponent,
     UpdateQuestionComponent,
+    PaymentgetwayComponent,
     
     
   ],

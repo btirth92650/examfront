@@ -1,0 +1,13 @@
+<ul><li><h1>Donate Us</h1> </li></ul>
+
+<form class="example-form text-center">
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Payment Due</mat-label>
+      <input name="amount" [(ngModel)]="payment.amount"
+      matInput placeholder="Enter Amount Here.." value="">
+    </mat-form-field>
+<div class="container">
+    <button (click)="paymentStart()" mat-raised-button color="primary">PAY</button>
+</div>
+
+

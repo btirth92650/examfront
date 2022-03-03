@@ -12,6 +12,7 @@ export class SignupComponent implements OnInit {
 
   constructor( private userService:UserService, private snak:MatSnackBar  ) { }
 
+
   public user ={
     username:'',
     password:'',

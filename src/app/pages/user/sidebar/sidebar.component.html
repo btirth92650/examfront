@@ -9,6 +9,13 @@
         <button mat-list-item [routerLink]="'/user-dashbord/' + c.cid"
          *ngFor="let c of categories">
             <mat-icon mat-list-icon>quiz</mat-icon>{{c.title}}</button>
-        
+
     </mat-action-list>
+    <!-- <mat-action-list>
+        <div matSubheader>payment</div>
+
+
+    <button mat-list-item  routerLink="/user-dashbord/paymentGetWay" >
+        <mat-icon mat-list-icon>payments</mat-icon>PaymentGetWay</button>
+</mat-action-list> -->
 </mat-card>
